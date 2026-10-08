@@ -7,3 +7,14 @@ The study compares UniSpeech-SAT Base+ and WavLM Base+ as frozen feature extract
 Two primary experiments are conducted. The first evaluates unseen-speaker performance using clean RAVDESS recordings. The second evaluates acoustic-noise robustness by introducing environmental noise from the DEMAND dataset to the same test recordings under controlled clean, 10 dB SNR, and 0 dB SNR conditions. Performance is assessed using macro-F1, per-emotion F1, confusion matrices, and degradation under increasing noise.
 
 An MFCC → MLP system is retained as a conventional reference baseline. The primary comparison remains the robustness characteristics of the frozen UniSpeech-SAT and WavLM representations.
+
+Completed so far:
+
+A single RAVDESS recording was resampled from 48 kHz to 16 kHz and processed using the frozen UniSpeech-SAT Base+ and WavLM Base+ models.
+
+| Model | Frame-Level Representation | Mean-Pooled Embedding | Processing Time |
+|---|---|---|---|
+| UniSpeech-SAT Base+ | 164 × 768 | 768 | 1.058 s |
+| WavLM Base+ | 164 × 768 | 768 | 0.992 s |
+
+Both models produced 768-dimensional mean-pooled embeddings from the same input recording. Processing times refer to the model forward pass only and exclude model loading and downloading.
