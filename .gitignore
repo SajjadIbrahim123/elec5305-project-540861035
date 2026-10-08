@@ -1,2 +1,4 @@
 data/ravdess/*
 !data/ravdess/.gitkeep
+# Generated embeddings
+embeddings/*/*.npy
