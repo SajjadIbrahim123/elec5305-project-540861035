@@ -94,6 +94,7 @@ print("Total processing time:", round(total_time, 2), "seconds")
 print(
     "Average time per recording:",
     round(total_time / len(metadata), 3),
+    
     "seconds"
 )
 print("Saved to:", OUTPUT_PATH)
