@@ -70,3 +70,8 @@ print("\nActors in each split:")
 for split in ["train", "validation", "test"]:
     actors = sorted(metadata[metadata["split"] == split]["actor"].unique())
     print(f"{split}: {actors}")
+
+# Save metadata so both models use exactly the same dataset and splits
+metadata.to_csv("results/ravdess_metadata.csv", index=False)
+
+print("\nSaved metadata to results/ravdess_metadata.csv")
