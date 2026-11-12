@@ -18,3 +18,50 @@ A single RAVDESS recording was resampled from 48 kHz to 16 kHz and processed usi
 | WavLM Base+ | 164 × 768 | 768 | 0.992 s |
 
 Both models produced 768-dimensional mean-pooled embeddings from the same input recording. Processing times refer to the model forward pass only and exclude model loading and downloading.
+
+
+
+## Datasets
+
+This project uses two publicly available audio datasets.
+
+### 1. RAVDESS
+
+**The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)**
+
+Official download:
+https://zenodo.org/records/1188976
+
+Download the speech-only audio recordings (`Audio_Speech_Actors_01-24.zip`).
+
+Extract the 24 actor folders into:
+
+`data/ravdess/`
+
+The project uses four emotional-expression categories:
+neutral, happy, sad, and angry.
+
+### 2. DEMAND
+
+**Diverse Environments Multichannel Acoustic Noise Database (DEMAND)**
+
+Official download:
+https://zenodo.org/records/1227121
+
+Download the 16 kHz versions of these three environments:
+
+- DKITCHEN (Kitchen)
+- PCAFETER (Cafeteria)
+- STRAFFIC (Traffic)
+
+Extract the recordings into:
+
+`data/demand/`
+
+The experiments use `ch01.wav` from each environment.
+
+### Dataset Availability
+
+The original audio datasets are not included in this GitHub repository because of their size. They can be downloaded from the official sources above.
+
+The Python scripts, extracted results, and instructions for reproducing the experiments are provided in this repository.
