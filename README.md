@@ -1,3 +1,4 @@
+
 This project investigates the robustness of pretrained self-supervised learning (SSL) representations for Speech Emotion Recognition (SER). The central research question is:
 
 Do differences in the pretraining objectives of UniSpeech-SAT and WavLM produce different robustness to unseen speakers and acoustic noise when used as frozen feature extractors for speech emotion recognition?
