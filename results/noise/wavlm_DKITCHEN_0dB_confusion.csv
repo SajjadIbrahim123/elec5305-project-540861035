@@ -1,0 +1,5 @@
+,neutral,happy,sad,angry
+neutral,0,0,16,0
+happy,0,0,32,0
+sad,0,0,32,0
+angry,0,1,30,1

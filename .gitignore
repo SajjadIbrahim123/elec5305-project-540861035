@@ -4,3 +4,12 @@ data/ravdess/*
 embeddings/*/*.npy
 # Generated classifier checkpoints
 results/*.pt
+# DEMAND environmental noise dataset
+data/demand/*
+!data/demand/.gitkeep
+# macOS system files
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc

@@ -1,0 +1,5 @@
+Emotion,UniSpeech-SAT original,UniSpeech-SAT augmented,WavLM original,WavLM augmented
+Neutral,0.000000,0.461538,0.000000,0.709677
+Happy,0.000000,0.666667,0.000000,0.610169
+Sad,0.444444,0.765432,0.444444,0.828571
+Angry,0.000000,0.745098,0.000000,0.781250

@@ -1,0 +1,8 @@
+Condition,UniSpeech-SAT change,WavLM change
+Clean,0.041862,0.031699
+Kitchen (10 dB),0.382937,0.558586
+Kitchen (0 dB),0.390804,0.577652
+Cafeteria (10 dB),0.548573,0.621306
+Cafeteria (0 dB),0.367450,0.366134
+Traffic (10 dB),0.357891,0.613096
+Traffic (0 dB),0.563793,0.555374
