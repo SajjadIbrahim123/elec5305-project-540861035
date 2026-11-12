@@ -65,3 +65,7 @@ The experiments use `ch01.wav` from each environment.
 The original audio datasets are not included in this GitHub repository because of their size. They can be downloaded from the official sources above.
 
 The Python scripts, extracted results, and instructions for reproducing the experiments are provided in this repository.
+
+### Project Updates
+
+Following the initial clean speech evaluation, I extended the project to investigate how both models perform under environmental noise. I added kitchen, cafeteria and traffic noise from the DEMAND dataset at 10 dB and 0 dB SNR. The initial results showed a significant reduction in classification performance, so I conducted a third experiment using noise-augmented training data while keeping both pretrained speech models frozen. This allowed me to investigate whether training the classifiers with noisy examples could improve robustness. I also added comparison graphs, confusion matrices and results tables to evaluate the differences between UniSpeech-SAT and WavLM across all three experiments.
